@@ -49,7 +49,12 @@ export default function Header() {
               </Link>
 
               {/* Products Dropdown Menu */}
-              {showProductsMenu && <ProductsDropdown />}
+              {showProductsMenu && (
+                <ProductsDropdown
+                  onMouseEnter={() => setShowProductsMenu(true)}
+                  onMouseLeave={() => setShowProductsMenu(false)}
+                />
+              )}
             </div>
             <div
               className="relative"
@@ -64,7 +69,12 @@ export default function Header() {
               </Link>
 
               {/* Services Dropdown Menu */}
-              {showServicesMenu && <ServicesDropdown />}
+              {showServicesMenu && (
+                <ServicesDropdown
+                  onMouseEnter={() => setShowServicesMenu(true)}
+                  onMouseLeave={() => setShowServicesMenu(false)}
+                />
+              )}
             </div>
             <div
               className="relative"
@@ -79,7 +89,12 @@ export default function Header() {
               </Link>
 
               {/* News Dropdown Menu */}
-              {showNewsMenu && <NewsDropdown />}
+              {showNewsMenu && (
+                <NewsDropdown
+                  onMouseEnter={() => setShowNewsMenu(true)}
+                  onMouseLeave={() => setShowNewsMenu(false)}
+                />
+              )}
             </div>
             <div
               className="relative"
@@ -94,7 +109,12 @@ export default function Header() {
               </Link>
 
               {/* Contact Dropdown Menu */}
-              {showContactMenu && <ContactDropdown />}
+              {showContactMenu && (
+                <ContactDropdown
+                  onMouseEnter={() => setShowContactMenu(true)}
+                  onMouseLeave={() => setShowContactMenu(false)}
+                />
+              )}
             </div>
           </nav>
 
